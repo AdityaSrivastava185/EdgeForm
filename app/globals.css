@@ -23,8 +23,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-familjen-grotesk), sans-serif;
+  font-weight: 500;
 }
 
 .container{
-  @apply  max-w-7xl w-full mx-auto py-7;
+  @apply  max-w-7xl w-full mx-auto py-5;
 }

@@ -1,40 +1,80 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import { useRef, useState } from "react";
+
+const navItems = ["Products", "Solutions", "Resources", "Pricing"];
 
 const Navbar = () => {
+  const [activeItem, setActiveItem] = useState(null);
+  const [position, setPosition] = useState({
+    left: 0,
+    width: 0,
+  });
+
+  const navRef = useRef(null);
+
+  const handleMouseEnter = (e:any, item:any) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const navRect = navRef.current.getBoundingClientRect();
+
+    
+
+    setPosition({
+      left: rect.left - navRect.left,
+      width: rect.width,
+    });
+
+    setActiveItem(item);
+  };
+
   return (
-    <div id="container" className="container ">
-      <div
-        id="nav-items-container"
-        className="flex flex-row items-center justify-between"
-      >
-        <div id="logo">EdgeForm</div>
+    <div className="container">
+      <div className="flex items-center justify-between">
+        
+        <div>EdgeForm</div>
 
+        
         <div
-          id="nav-links-container"
-          className="hidden md:flex flex-row items-center justify-center gap-7"
+          ref={navRef}
+          className="relative hidden md:flex items-center gap-7"
+          onMouseLeave={() => setActiveItem(null)}
         >
-          <div id="products">
-            <Link href="#">Products</Link>
-          </div>
+          <div
+            className={`
+              pointer-events-none
+              absolute
+              top-1/2
+              h-11
+              -translate-y-1/2
+              rounded-lg
+              border
+              border-[#2f2f2f]
+              transition-all
+              duration-300
+              ease-out
+              ${activeItem ? "opacity-100" : "opacity-0"}
+            `}
+            style={{
+              left: position.left,
+              width: position.width,
+            }}
+          />
 
-          <div id="solutions">
-            <Link href="#">Solutions</Link>
-          </div>
-
-          <div id="resources">
-            <Link href="#">Resources</Link>
-          </div>
-
-          <div id="pricing">
-            <Link href="#">Pricing</Link>
-          </div>
+          {navItems.map((item) => (
+            <Link
+              key={item}
+              href="#"
+              className="relative z-10 px-3 py-2"
+              onMouseEnter={(e) => handleMouseEnter(e, item)}
+            >
+              {item}
+            </Link>
+          ))}
         </div>
 
-        <div
-          id="navbar-cta-container"
-          className="hidden md:flex flex-row items-center justify-center gap-7"
-        >
+       
+        <div className="hidden md:flex items-center gap-7">
           <Link href="#">Login</Link>
           <Link href="#">Contact Sales</Link>
 
