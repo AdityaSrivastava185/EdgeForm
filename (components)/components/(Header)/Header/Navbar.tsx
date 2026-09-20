@@ -65,24 +65,25 @@ const Navbar = () => {
             <Link
               key={item}
               href="#"
-              className="relative z-10 px-3 py-2"
+              className="flex flex-row items-center justify-center gap-2 relative z-10 px-3 py-2"
               onMouseEnter={(e) => handleMouseEnter(e, item)}
             >
               {item}
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-up-down preview-icon"><path d="m7 15 5 5 5-5"/><path d="m7 9 5-5 5 5"/></svg>
             </Link>
           ))}
         </div>
 
        
-        <div className="hidden md:flex items-center gap-7">
-          <Link href="#">Login</Link>
-          <Link href="#">Contact Sales</Link>
+        <div className="hidden md:flex items-center gap-1">
+          <Link className="border-1 border-[#2f2f2f] rounded-full px-3 py-1 " href="#">Login</Link>
+          <Link className="border-1 border-[#2f2f2f] rounded-full px-3 py-1" href="#">Contact Sales</Link>
 
-          <Link href="#">
+          <Link className="border-1 border-[#2f2f2f] rounded-full h-8 w-8 flex items-center justify-center" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
