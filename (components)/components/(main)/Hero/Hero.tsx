@@ -4,24 +4,19 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="container h-svh">
+    <section className="container h-svh">
       <div className="grid h-full grid-cols-[minmax(0,1fr)_9fr_minmax(0,1fr)]">
-        {/* LEFT BORDER-PATTERN DIV */}
+
         <div className="relative">
-          {/* DOT PATTERN */}
           <Pattern />
-          {/* Left border */}
           <div className="absolute inset-y-0 left-0 z-10 w-px">
             <VerticalBorder />
           </div>
-
-          {/* Right border */}
           <div className="absolute inset-y-0 right-0 z-10 w-px">
             <VerticalBorder />
           </div>
         </div>
-
-        {/* CENTER */}
+    
         <div className="flex flex-col items-center gap-10 text-center">
           <div className="relative flex items-center justify-center h-36 w-72">
             <Pattern />
@@ -47,25 +42,33 @@ const Hero = () => {
               <p className="text-[#ff5e1f]">FRONTEND</p>
             </div>
           </div>
+          <div className="flex flex-col gap-4">
+            <h3 className="text-5xl text-balance">
+              Deploy lightning-fast websites and web apps on Edgeform's global
+              network.{" "}
+            </h3>
+            <p className="text-balance">
+              Bring any JavaScript framework or build tool to Cloudflare,
+              connect to your git repository, and deploy your project to a
+              single Worker that serves both front-end and back-end and reaches
+              users in less than 50 ms worldwide.
+            </p>
+          </div>
         </div>
 
-        {/* RIGHT BORDER-PATTERN DIV */}
         <div className="relative">
-          {/* DOT PATTERN */}
           <Pattern />
 
-          {/* Left border */}
           <div className="absolute inset-y-0 left-0 z-10 w-px">
             <VerticalBorder />
           </div>
 
-          {/* Right border */}
           <div className="absolute inset-y-0 right-0 z-10 w-px">
             <VerticalBorder />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
