@@ -15,7 +15,7 @@ const Pattern = () => {
           height="12"
           patternUnits="userSpaceOnUse"
         >
-          <circle cx="6" cy="6" r="0.75" fill="var(--color-decor-dots-100)" />
+          <circle cx="6" cy="6" r="0.75" fill="#262626" />
         </pattern>
 
         <rect
