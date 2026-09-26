@@ -1,10 +1,12 @@
+import HeroImage from "@/(components)/(utility)/utility/HeroImage";
 import Pattern from "@/(components)/(utility)/utility/Pattern";
 import VerticalBorder from "@/(components)/(utility)/utility/VerticalBorder";
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
   return (
-    <section className="container h-svh">
+    <section className="container min-h-svh">
       <div className="grid h-full grid-cols-[minmax(0,1fr)_9fr_minmax(0,1fr)]">
         <div className="relative">
           <Pattern />
@@ -16,7 +18,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-10 text-center">
+        <div className="flex flex-col items-center gap-10">
           <div className="relative flex items-center justify-center h-36 w-72">
             <Pattern />
             <div className="flex items-center justify-center gap-2 border-1 border-[#ff5e1f] border-dashed rounded-md p-2 bg-[#ff5e1f]/5">
@@ -42,11 +44,11 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <h3 className="text-5xl text-balance">
+            <h3 className="md:text-5xl text-balance text-center">
               Deploy lightning-fast websites and web apps on Edgeform's global
               network.{" "}
             </h3>
-            <p className="text-balance">
+            <p className="text-balance text-center">
               Bring any JavaScript framework or build tool to Edgeform, connect
               to your git repository, and deploy your project to a single Worker
               that serves both front-end and back-end and reaches users in less
@@ -62,19 +64,23 @@ const Hero = () => {
                 <div className="absolute bg-[#161414] -right-[7px] -bottom-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
               </div>
               <div className="flex h-full flex-1 flex-col items-start p-6 lg:p-8">
-                <p>HTML, JS and CSS caching</p>
-                <p>
-                  Every request for a static asset goes through Edgeform's
-                  Tiered Cache for the fastest possible performance.
+                <p className="text-balance">
+                  Preview deployments for every branch
+                </p>
+                <p className="text-[#f0e3de]/70 text-balance">
+                  Create a pull request, get a preview URL to view and share
+                  before deploying to productions
                 </p>
               </div>
             </div>
             <div className="border-[#262626] relative flex h-full flex-col border col-span-1">
               <div className="flex h-full flex-1 flex-col items-start p-6 lg:p-8">
-                <p>HTML, JS and CSS caching</p>
-                <p>
-                  Every request for a static asset goes through Edgeform's
-                  Tiered Cache for the fastest possible performance.
+                <p className="text-balance">
+                  Support for all frameworks and rendering mode
+                </p>
+                <p className="text-[#f0e3de]/70">
+                  Server-side rendered (SSR), Incremental Static Regeneration
+                  (ISR), Static Site Generation (SSG), client-side rendered.
                 </p>
               </div>
             </div>
@@ -87,11 +93,30 @@ const Hero = () => {
               </div>
               <div className="flex h-full flex-1 flex-col items-start p-6 lg:p-8">
                 <p>HTML, JS and CSS caching</p>
-                <p>
+                <p className="flex h-full flex-1 flex-col items-start justify-items-start text-[#f0e3de]/70 text-balance">
                   Every request for a static asset goes through Edgeform's
                   Tiered Cache for the fastest possible performance.
                 </p>
               </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4">
+            <h3 className="text-center md:text-5xl text-balance">
+              Proven frontend infrastructure, powering products at scale
+            </h3>
+            <p className="text-center text-balance">
+              The same end-to-end frontend stack behind Edgeform's own products
+              — battle-tested across billions of requests and millions of users
+              daily. Build with the same primitives we use in production.
+            </p>
+          </div>
+          <div className="bg-[#f0e3de20]/30 relative w-full p-1 rounded-md">
+            <HeroImage />
+            <div className="flex justify-end p-1">
+              <span className="text-[#f0e3de]/70">Image source -</span>
+              <Link className="text-[#ff5e1f]" href="https://www.cloudflare.com/solutions/frontends/">
+                Cloudflare
+              </Link>
             </div>
           </div>
         </div>
