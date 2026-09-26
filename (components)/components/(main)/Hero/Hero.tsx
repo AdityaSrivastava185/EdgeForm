@@ -1,5 +1,6 @@
 import HeroImage from "@/(components)/(utility)/utility/HeroImage";
 import Pattern from "@/(components)/(utility)/utility/Pattern";
+import SectionHeader from "@/(components)/(utility)/utility/SectionHeader";
 import VerticalBorder from "@/(components)/(utility)/utility/VerticalBorder";
 import Link from "next/link";
 import React from "react";
@@ -43,18 +44,14 @@ const Hero = () => {
               <p className="text-[#ff5e1f]">FRONTEND</p>
             </div>
           </div>
-          <div className="flex flex-col gap-4">
-            <h3 className="md:text-5xl text-balance text-center">
-              Deploy lightning-fast websites and web apps on Edgeform's global
-              network.{" "}
-            </h3>
-            <p className="text-balance text-center">
-              Bring any JavaScript framework or build tool to Edgeform, connect
+          <SectionHeader
+            title="Deploy lightning-fast websites and web apps on Edgeform's global
+              network."
+            description="Bring any JavaScript framework or build tool to Edgeform, connect
               to your git repository, and deploy your project to a single Worker
               that serves both front-end and back-end and reaches users in less
-              than 50 ms worldwide.
-            </p>
-          </div>
+              than 50 ms worldwide."
+          />
           <div className="grid grid-cols-1 lg:grid-cols-3">
             <div className="border-[#262626] relative flex h-full flex-col border col-span-1">
               <div className="pointer-events-none absolute inset-0 z-10 select-none">
@@ -100,21 +97,21 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-4">
-            <h3 className="text-center md:text-5xl text-balance">
-              Proven frontend infrastructure, powering products at scale
-            </h3>
-            <p className="text-center text-balance">
-              The same end-to-end frontend stack behind Edgeform's own products
+          <SectionHeader
+            title="Proven frontend infrastructure, powering products at scale"
+            description="The same end-to-end frontend stack behind Edgeform's own products
               — battle-tested across billions of requests and millions of users
-              daily. Build with the same primitives we use in production.
-            </p>
-          </div>
+              daily. Build with the same primitives we use in production"
+          />
+
           <div className="bg-[#f0e3de20]/30 relative w-full p-1 rounded-md">
             <HeroImage />
             <div className="flex justify-end p-1">
               <span className="text-[#f0e3de]/70">Image source -</span>
-              <Link className="text-[#ff5e1f]" href="https://www.cloudflare.com/solutions/frontends/">
+              <Link
+                className="text-[#ff5e1f]"
+                href="https://www.cloudflare.com/solutions/frontends/"
+              >
                 Cloudflare
               </Link>
             </div>
