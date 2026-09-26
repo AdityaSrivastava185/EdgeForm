@@ -10,7 +10,7 @@ import React from "react";
 const Hero = () => {
   return (
     // Custom card for hero section
-    <section className="container min-h-svh">
+    <section className="container">
       <div className="grid h-full grid-cols-[minmax(0,1fr)_9fr_minmax(0,1fr)]">
         <div className="relative">
           <Pattern />
@@ -22,7 +22,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-10">
+        <div className="flex flex-col items-center gap-10 inner-container">
           <div className="relative flex items-center justify-center h-36 w-72">
             <Pattern />
             <div className="flex items-center justify-center gap-2 border-1 border-[#ff5e1f] border-dashed rounded-md p-2 bg-[#ff5e1f]/5">
