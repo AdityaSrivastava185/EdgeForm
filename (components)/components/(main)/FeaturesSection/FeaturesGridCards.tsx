@@ -65,8 +65,8 @@ const featuresList = [
 
 const FeaturesGridCards = () => {
   return (
-    <div className="mx-auto w-full max-w-5xl">
-      <div className="rounded-md border border-dashed border-[#262626] p-2">
+    <div className="mx-auto w-full md:max-w-5xl">
+      <div className="rounded-md border border-dashed border-[#f0e3de]/10 md:p-2">
         <div className="overflow-hidden rounded-md border border-[#262626]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {featuresList.map((feature) => (
@@ -74,7 +74,7 @@ const FeaturesGridCards = () => {
                 key={feature.index}
                 title={feature.title}
                 description={feature.description}
-                className="relative flex h-full flex-col gap-0 border-b border-r border-[#262626] p-7"
+                className="relative flex h-full flex-col gap-0 border-b border-r border-[#262626] md:px-5 md:py-4"
                 titleClassName="text-start text-balance text-xl md:text-lg"
                 descriptionClassName="text-start text-balance text-[#f0e3de]/70"
               />

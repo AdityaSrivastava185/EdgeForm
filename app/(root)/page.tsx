@@ -2,6 +2,7 @@ import Navbar from "@/(components)/components/(Header)/Header/Navbar";
 import Border from "@/(components)/(utility)/utility/Border";
 import Hero from "@/(components)/components/(main)/Hero/Hero";
 import Features from "@/(components)/components/(main)/FeaturesSection/Features";
+import Framework from "@/(components)/components/(main)/FrameworksSection/Framework";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </div>
       <Hero/>
       <Features/>
+      <Framework/>
     </div>
     </>
   );

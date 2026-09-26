@@ -1,12 +1,13 @@
-import React from "react";
-import FeatureHeader from "./FeatureHeader";
-import Pattern from "@/(components)/(utility)/utility/Pattern";
-import VerticalBorder from "@/(components)/(utility)/utility/VerticalBorder";
-import FeaturesGridCards from "./FeaturesGridCards";
+import Pattern from '@/(components)/(utility)/utility/Pattern'
+import VerticalBorder from '@/(components)/(utility)/utility/VerticalBorder'
+import React from 'react'
+import FeatureHeader from '../FeaturesSection/FeatureHeader'
+import FeaturesGridCards from '../FeaturesSection/FeaturesGridCards'
+import FrameworkHeader from './FrameworkHeader'
 
-const Features = () => {
+const Framework = () => {
   return (
-    <div className="container">
+     <div className="container">
       <div className="grid h-full grid-cols-[minmax(0,1fr)_9fr_minmax(0,1fr)]">
         <div className="relative">
           <Pattern />
@@ -18,8 +19,7 @@ const Features = () => {
           </div>
         </div>
         <div className="inner-container">
-            <FeatureHeader/>
-            <FeaturesGridCards/>
+            <FrameworkHeader/>
         </div>
         <div className="relative">
           <Pattern />
@@ -34,7 +34,7 @@ const Features = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Features;
+export default Framework
