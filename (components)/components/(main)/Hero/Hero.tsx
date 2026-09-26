@@ -6,7 +6,6 @@ const Hero = () => {
   return (
     <section className="container h-svh">
       <div className="grid h-full grid-cols-[minmax(0,1fr)_9fr_minmax(0,1fr)]">
-
         <div className="relative">
           <Pattern />
           <div className="absolute inset-y-0 left-0 z-10 w-px">
@@ -16,7 +15,7 @@ const Hero = () => {
             <VerticalBorder />
           </div>
         </div>
-    
+
         <div className="flex flex-col items-center gap-10 text-center">
           <div className="relative flex items-center justify-center h-36 w-72">
             <Pattern />
@@ -48,11 +47,52 @@ const Hero = () => {
               network.{" "}
             </h3>
             <p className="text-balance">
-              Bring any JavaScript framework or build tool to Cloudflare,
-              connect to your git repository, and deploy your project to a
-              single Worker that serves both front-end and back-end and reaches
-              users in less than 50 ms worldwide.
+              Bring any JavaScript framework or build tool to Edgeform, connect
+              to your git repository, and deploy your project to a single Worker
+              that serves both front-end and back-end and reaches users in less
+              than 50 ms worldwide.
             </p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3">
+            <div className="border-[#262626] relative flex h-full flex-col border col-span-1">
+              <div className="pointer-events-none absolute inset-0 z-10 select-none">
+                <div className="absolute bg-[#161414] -left-[7px] -top-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
+                <div className="absolute bg-[#161414] -right-[7px] -top-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
+                <div className="absolute bg-[#161414] -left-[7px] -bottom-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
+                <div className="absolute bg-[#161414] -right-[7px] -bottom-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
+              </div>
+              <div className="flex h-full flex-1 flex-col items-start p-6 lg:p-8">
+                <p>HTML, JS and CSS caching</p>
+                <p>
+                  Every request for a static asset goes through Edgeform's
+                  Tiered Cache for the fastest possible performance.
+                </p>
+              </div>
+            </div>
+            <div className="border-[#262626] relative flex h-full flex-col border col-span-1">
+              <div className="flex h-full flex-1 flex-col items-start p-6 lg:p-8">
+                <p>HTML, JS and CSS caching</p>
+                <p>
+                  Every request for a static asset goes through Edgeform's
+                  Tiered Cache for the fastest possible performance.
+                </p>
+              </div>
+            </div>
+            <div className="border-[#262626] relative flex h-full flex-col border col-span-1">
+              <div className="pointer-events-none absolute inset-0 z-10 select-none">
+                <div className="absolute bg-[#161414] -left-[7px] -top-[7px] w-3.5 h-3.5 border  border-[#f0e3de20] rounded-sm"></div>
+                <div className="absolute bg-[#161414] -right-[7px] -top-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
+                <div className="absolute bg-[#161414] -left-[7px] -bottom-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
+                <div className="absolute bg-[#161414] -right-[7px] -bottom-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
+              </div>
+              <div className="flex h-full flex-1 flex-col items-start p-6 lg:p-8">
+                <p>HTML, JS and CSS caching</p>
+                <p>
+                  Every request for a static asset goes through Edgeform's
+                  Tiered Cache for the fastest possible performance.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
