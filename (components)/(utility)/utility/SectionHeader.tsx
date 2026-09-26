@@ -19,8 +19,8 @@ const SectionHeader = ({
   descriptionClassName,
 }: SectionHeaderProps) => {
   return (
-    <section className={cn(className)}>
-      <div className="flex flex-col gap-4">
+    <section>
+      <div className={cn("flex flex-col gap-4", className)}>
         <h3
           className={cn("text-center text-balance md:text-5xl", titleClassName)}
         >

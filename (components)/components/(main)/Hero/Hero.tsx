@@ -1,12 +1,15 @@
+import GridCards from "@/(components)/(utility)/utility/GridCards";
 import HeroImage from "@/(components)/(utility)/utility/HeroImage";
 import Pattern from "@/(components)/(utility)/utility/Pattern";
 import SectionHeader from "@/(components)/(utility)/utility/SectionHeader";
 import VerticalBorder from "@/(components)/(utility)/utility/VerticalBorder";
+import FrontendBadge from "@/images/FrontendBadge";
 import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
   return (
+    // Custom card for hero section
     <section className="container min-h-svh">
       <div className="grid h-full grid-cols-[minmax(0,1fr)_9fr_minmax(0,1fr)]">
         <div className="relative">
@@ -24,22 +27,7 @@ const Hero = () => {
             <Pattern />
             <div className="flex items-center justify-center gap-2 border-1 border-[#ff5e1f] border-dashed rounded-md p-2 bg-[#ff5e1f]/5">
               <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  className="inline-block shrink-0 size-5"
-                  aria-hidden="true"
-                >
-                  <g
-                    fill="none"
-                    stroke="#ff5e1f"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M3 9h18M9 9v12M7.8 3h8.4c1.68 0 2.52 0 3.162.327a3 3 0 0 1 1.311 1.311C21 5.28 21 6.12 21 7.8v8.4c0 1.68 0 2.52-.327 3.162a3 3 0 0 1-1.311 1.311C18.72 21 17.88 21 16.2 21H7.8c-1.68 0-2.52 0-3.162-.327a3 3 0 0 1-1.311-1.311C3 18.72 3 17.88 3 16.2V7.8c0-1.68 0-2.52.327-3.162a3 3 0 0 1 1.311-1.311C5.28 3 6.12 3 7.8 3Z" />
-                  </g>
-                </svg>
+                <FrontendBadge />
               </span>
               <p className="text-[#ff5e1f]">FRONTEND</p>
             </div>
@@ -52,51 +40,8 @@ const Hero = () => {
               that serves both front-end and back-end and reaches users in less
               than 50 ms worldwide."
           />
-          <div className="grid grid-cols-1 lg:grid-cols-3">
-            <div className="border-[#262626] relative flex h-full flex-col border col-span-1">
-              <div className="pointer-events-none absolute inset-0 z-10 select-none">
-                <div className="absolute bg-[#161414] -left-[7px] -top-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
-                <div className="absolute bg-[#161414] -right-[7px] -top-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
-                <div className="absolute bg-[#161414] -left-[7px] -bottom-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
-                <div className="absolute bg-[#161414] -right-[7px] -bottom-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
-              </div>
-              <div className="flex h-full flex-1 flex-col items-start p-6 lg:p-8">
-                <p className="text-balance">
-                  Preview deployments for every branch
-                </p>
-                <p className="text-[#f0e3de]/70 text-balance">
-                  Create a pull request, get a preview URL to view and share
-                  before deploying to productions
-                </p>
-              </div>
-            </div>
-            <div className="border-[#262626] relative flex h-full flex-col border col-span-1">
-              <div className="flex h-full flex-1 flex-col items-start p-6 lg:p-8">
-                <p className="text-balance">
-                  Support for all frameworks and rendering mode
-                </p>
-                <p className="text-[#f0e3de]/70">
-                  Server-side rendered (SSR), Incremental Static Regeneration
-                  (ISR), Static Site Generation (SSG), client-side rendered.
-                </p>
-              </div>
-            </div>
-            <div className="border-[#262626] relative flex h-full flex-col border col-span-1">
-              <div className="pointer-events-none absolute inset-0 z-10 select-none">
-                <div className="absolute bg-[#161414] -left-[7px] -top-[7px] w-3.5 h-3.5 border  border-[#f0e3de20] rounded-sm"></div>
-                <div className="absolute bg-[#161414] -right-[7px] -top-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
-                <div className="absolute bg-[#161414] -left-[7px] -bottom-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
-                <div className="absolute bg-[#161414] -right-[7px] -bottom-[7px] w-3.5 h-3.5 border border-[#f0e3de20] rounded-sm"></div>
-              </div>
-              <div className="flex h-full flex-1 flex-col items-start p-6 lg:p-8">
-                <p>HTML, JS and CSS caching</p>
-                <p className="flex h-full flex-1 flex-col items-start justify-items-start text-[#f0e3de]/70 text-balance">
-                  Every request for a static asset goes through Edgeform's
-                  Tiered Cache for the fastest possible performance.
-                </p>
-              </div>
-            </div>
-          </div>
+
+          <GridCards />
           <SectionHeader
             title="Proven frontend infrastructure, powering products at scale"
             description="The same end-to-end frontend stack behind Edgeform's own products

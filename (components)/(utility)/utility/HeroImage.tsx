@@ -10,6 +10,7 @@ const HeroImage = () => {
         width={7000}
         alt="hero-image"
         className="object-contain rounded-md"
+        loading="eager"
       />
     </section>
   );
