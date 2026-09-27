@@ -5,6 +5,7 @@ import Features from "@/(components)/components/(main)/FeaturesSection/Features"
 import Framework from "@/(components)/components/(main)/FrameworksSection/Framework";
 import Experience from "@/(components)/components/(main)/Experience/Experience";
 import AllProducts from "@/(components)/components/(main)/AllProducts/AllProducts";
+import Footer from "@/(components)/components/(Footer)/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Framework/>
       <Experience/>
       <AllProducts/>
+      <Footer/>
     </div>
     </>
   );
