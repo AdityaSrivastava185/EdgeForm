@@ -4,7 +4,7 @@ import Border from "@/(components)/(utility)/utility/Border";
 
 const Experience = () => {
   return (
-    <div className="w-full text-center mb-20">
+    <div className="w-full text-center">
       <Border />
       <ExperienceReview />
       <Border />
