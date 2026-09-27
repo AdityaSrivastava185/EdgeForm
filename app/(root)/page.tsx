@@ -3,6 +3,7 @@ import Border from "@/(components)/(utility)/utility/Border";
 import Hero from "@/(components)/components/(main)/Hero/Hero";
 import Features from "@/(components)/components/(main)/FeaturesSection/Features";
 import Framework from "@/(components)/components/(main)/FrameworksSection/Framework";
+import Experience from "@/(components)/components/(main)/Experience/Experience";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero/>
       <Features/>
       <Framework/>
+      <Experience/>
     </div>
     </>
   );
