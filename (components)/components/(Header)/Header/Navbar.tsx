@@ -28,9 +28,10 @@ const Navbar = () => {
 
   return (
     <div className="container py-4">
-      <div className="flex items-center justify-between">
-        <div>EdgeForm</div>
-
+      <div className="flex items-center justify-between px-10 md:px-0">
+        <div>
+          <h1>Edgeform</h1>
+        </div>
         <div
           ref={navRef}
           className="relative hidden md:flex items-center gap-7"
@@ -86,15 +87,15 @@ const Navbar = () => {
           
         </div>
 
-        <div className="hidden md:flex items-center gap-1">
+        <div className="flex items-center gap-1">
           <Link
-            className="border-1 border-[#2f2f2f] rounded-full px-3 py-1 "
+            className="border-1 bg-[#ff5e1f] md:bg-transparent border-[#2f2f2f] rounded-full px-3 py-1 "
             href="#"
           >
             Login
           </Link>
           <Link
-            className="border-1 border-[#2f2f2f] rounded-full px-3 py-1"
+            className="hidden md:block border-1 border-[#2f2f2f] rounded-full px-3 py-1"
             href="#"
           >
             Contact Sales
