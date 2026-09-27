@@ -6,34 +6,34 @@ const FrameworkGrid = () => {
       <div className="relative">
 
         {/* Top-left */}
-        <div className="hidden md:absolute -left-[7px] -top-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:block absolute -left-[7px] -top-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Top - vertical divider */}
-        <div className="hidden md:absolute left-[66.6667%] -top-[7px] z-20 h-3.5 w-3.5 -translate-x-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:block absolute left-[66.6667%] -top-[7px] z-20 h-3.5 w-3.5 -translate-x-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Top-right */}
-        <div className="hidden md:absolute -right-[7px] -top-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:block absolute -right-[7px] -top-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Middle - vertical divider + first horizontal divider */}
-        <div className="hidden md:absolute left-[66.6667%] top-1/3 z-20 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:block absolute left-[66.6667%] top-1/3 z-20 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Middle-right - first horizontal divider */}
-        <div className="hidden md:absolute -right-[7px] top-1/3 z-20 h-3.5 w-3.5 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:block absolute -right-[7px] top-1/3 z-20 h-3.5 w-3.5 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Middle - vertical divider + second horizontal divider */}
-        <div className="hidden md:absolute left-[66.6667%] top-2/3 z-20 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:block absolute left-[66.6667%] top-2/3 z-20 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Middle-right - second horizontal divider */}
-        <div className="hidden md:absolute -right-[7px] top-2/3 z-20 h-3.5 w-3.5 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:block absolute -right-[7px] top-2/3 z-20 h-3.5 w-3.5 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Bottom-left */}
-        <div className="hidden md:absolute -bottom-[7px] -left-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:block absolute -bottom-[7px] -left-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Bottom - vertical divider */}
-        <div className="hidden md:absolute bottom-[0px] left-[66.6667%] z-20 h-3.5 w-3.5 -translate-x-1/2 translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:block absolute bottom-[0px] left-[66.6667%] z-20 h-3.5 w-3.5 -translate-x-1/2 translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Bottom-right */}
-        <div className="hidden md:absolute -bottom-[7px] -right-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:block absolute -bottom-[7px] -right-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* ================= MAIN GRID ================= */}
 
