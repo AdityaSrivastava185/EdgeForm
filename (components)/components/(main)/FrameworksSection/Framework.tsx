@@ -4,6 +4,7 @@ import React from 'react'
 import FeatureHeader from '../FeaturesSection/FeatureHeader'
 import FeaturesGridCards from '../FeaturesSection/FeaturesGridCards'
 import FrameworkHeader from './FrameworkHeader'
+import FrameworkGrid from './FrameworkGrid'
 
 const Framework = () => {
   return (
@@ -20,6 +21,7 @@ const Framework = () => {
         </div>
         <div className="inner-container">
             <FrameworkHeader/>
+            <FrameworkGrid/>
         </div>
         <div className="relative">
           <Pattern />

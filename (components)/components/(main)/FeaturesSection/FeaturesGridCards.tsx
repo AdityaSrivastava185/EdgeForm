@@ -1,4 +1,5 @@
 import SectionHeader from "@/(components)/(utility)/utility/SectionHeader";
+import Link from "next/link";
 import React from "react";
 
 const featuresList = [
@@ -58,8 +59,7 @@ const featuresList = [
   {
     index: 10,
     title: "Edge-first architecture",
-    description:
-      "A globally distributed, edge-native experience",
+    description: "A globally distributed, edge-native experience",
   },
 ];
 
@@ -79,6 +79,14 @@ const FeaturesGridCards = () => {
                 descriptionClassName="text-start text-balance text-[#f0e3de]/70"
               />
             ))}
+            <div className="flex md:flex-row items-center justify-center col-span-1 md:col-span-2">
+              <div className="flex md:flex-row items-center justify-center gap-7 flex-1">
+                <Link className="rounded-full md:px-5 md:py-3 border border-[#f0e3de20] hover:text-[#ff5e1f] hover:bg-[#ff5e1f]/5 hover:border-[#ff5e1f] transition-all duration-300 ease-in-out" href={""}>
+                  Deploy a worker template
+                </Link>
+                <Link className="rounded-full md:px-5 md:py-3 border border-[#f0e3de20] hover:text-[#ff5e1f] hover:bg-[#ff5e1f]/5 hover:border-[#ff5e1f] transition-all duration-300 ease-in-out" href={""}>See all templates</Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
