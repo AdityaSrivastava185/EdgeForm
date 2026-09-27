@@ -65,8 +65,8 @@ const featuresList = [
 
 const FeaturesGridCards = () => {
   return (
-    <div className="mx-auto w-full md:max-w-5xl">
-      <div className="rounded-md border border-dashed border-[#f0e3de]/10 md:p-2">
+    <div className="mx-auto w-full px-3 sm:px-4 md:max-w-5xl md:px-0">
+      <div className="rounded-md border border-dashed border-[#f0e3de]/10 p-1 sm:p-2">
         <div className="overflow-hidden rounded-md border border-[#262626]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {featuresList.map((feature) => (
@@ -74,17 +74,61 @@ const FeaturesGridCards = () => {
                 key={feature.index}
                 title={feature.title}
                 description={feature.description}
-                className="relative flex h-full flex-col gap-0 border-b border-r border-[#262626] md:px-5 md:py-4"
-                titleClassName="text-start text-balance text-xl md:text-lg"
-                descriptionClassName="text-start text-balance text-[#f0e3de]/70"
+                className="
+                  relative flex h-full flex-col gap-0
+                  border-b border-[#262626]
+                  px-4 py-5
+                  sm:px-5 sm:py-5
+                  md:border-r md:px-5 md:py-4
+                "
+                titleClassName="
+                  text-start text-balance
+                  text-lg
+                  sm:text-xl
+                  md:text-lg
+                "
+                descriptionClassName="
+                  mt-2
+                  text-start text-balance
+                  leading-relaxed
+                  text-[#f0e3de]/70
+                "
               />
             ))}
-            <div className="flex md:flex-row items-center justify-center col-span-1 md:col-span-2">
-              <div className="flex md:flex-row items-center justify-center gap-7 flex-1">
-                <Link className="rounded-full md:px-5 md:py-3 border border-[#f0e3de20] hover:text-[#ff5e1f] hover:bg-[#ff5e1f]/5 hover:border-[#ff5e1f] transition-all duration-300 ease-in-out" href={""}>
+
+            <div className="col-span-1 flex items-center justify-center px-4 py-8 md:col-span-2 md:px-5 md:py-6">
+              <div className="flex w-full flex-col items-center justify-center gap-3 sm:flex-row sm:gap-5 md:gap-7">
+                <Link
+                  className="
+                    w-full rounded-full border border-[#f0e3de20]
+                    px-5 py-3 text-center text-sm
+                    transition-all duration-300 ease-in-out
+                    hover:border-dashed
+                    hover:border-[#ff5e1f]
+                    hover:bg-[#ff5e1f]/5
+                    hover:text-[#ff5e1f]
+                    sm:w-auto
+                  "
+                  href=""
+                >
                   Deploy a worker template
                 </Link>
-                <Link className="rounded-full md:px-5 md:py-3 border border-[#f0e3de20] hover:text-[#ff5e1f] hover:bg-[#ff5e1f]/5 hover:border-[#ff5e1f] transition-all duration-300 ease-in-out" href={""}>See all templates</Link>
+
+                <Link
+                  className="
+                    w-full rounded-full border border-[#f0e3de20]
+                    px-5 py-3 text-center text-sm
+                    transition-all duration-300 ease-in-out
+                    hover:border-dashed
+                    hover:border-[#ff5e1f]
+                    hover:bg-[#ff5e1f]/5
+                    hover:text-[#ff5e1f]
+                    sm:w-auto
+                  "
+                  href=""
+                >
+                  See all templates
+                </Link>
               </div>
             </div>
           </div>

@@ -14,17 +14,16 @@ const GridCards = () => {
           </div>
           <SectionHeader
             className="flex flex-1 gap-0 flex-col items-start p-6 lg:p-8"
-            titleClassName="md:text-lg text-balance"
-            descriptionClassName="text-[#f0e3de]/70 text-balance text-start"
+            titleClassName="text-start md:text-lg md:text-balance text-xl md:text-base"
+            descriptionClassName="text-[#f0e3de]/70 md:text-balance text-start"
             title="Preview deployments for every branch"
-            description="Create a pull request, get a preview URL to view and share before
-              deploying to productions"
+            description="Create a pull request, get a preview URL to view and share before deploying to productions"
           />
         </div>
         <SectionHeader
           className="border-[#262626] relative flex h-full flex-col border col-span-1 items-start p-6 lg:p-8 gap-0"
           title="Support for all frameworks and rendering mode"
-          titleClassName="md:text-lg text-balance text-start"
+          titleClassName="md:text-lg md:text-balance text-start text-xl md:text-base"
           descriptionClassName="text-[#f0e3de]/70 text-balance text-start"
           description="Server-side rendered (SSR), Incremental Static Regeneration (ISR),
               Static Site Generation (SSG), client-side rendered."
@@ -39,7 +38,7 @@ const GridCards = () => {
           <SectionHeader
             className="flex flex-1 gap-0 flex-col items-start p-6 lg:p-8"
             title="HTML, JS and CSS caching"
-            titleClassName="md:text-lg text-balance text-start"
+            titleClassName="md:text-lg md:text-balance text-start text-xl md:text-base"
             descriptionClassName="text-[#f0e3de]/70 text-balance text-start"
             description="Every request for a static asset goes through Edgeform's Tiered
               Cache for the fastest possible performance."

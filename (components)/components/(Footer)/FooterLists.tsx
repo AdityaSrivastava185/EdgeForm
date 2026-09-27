@@ -67,7 +67,7 @@ const FooterLists = () => {
           </div>
 
           <div className="w-full">
-            <div className="grid w-full grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="grid w-full grid-cols-2 gap-y-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {footerCardsItems.map((items) => (
                 <div key={items.id} className="px-3 py-1">
                   <h4 className="mb-4 font-medium">

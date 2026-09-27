@@ -49,12 +49,12 @@ const Hero = () => {
               daily. Build with the same primitives we use in production"
           />
 
-          <div className="bg-[#f0e3de20]/30 relative w-full p-1 rounded-md">
+          <div className="bg-[#f0e3de20]/30 relative w-full md:p-1 rounded-md">
             <HeroImage />
             <div className="flex justify-end p-1">
-              <span className="text-[#f0e3de]/70">Image source -</span>
+              <span className="text-[#f0e3de]/70 text-sm md:text-base">Image source -</span>
               <Link
-                className="text-[#ff5e1f]"
+                className="text-[#ff5e1f] text-sm md:text-base"
                 href="https://www.cloudflare.com/solutions/frontends/"
               >
                 Cloudflare

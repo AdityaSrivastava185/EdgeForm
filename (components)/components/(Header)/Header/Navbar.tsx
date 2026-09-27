@@ -95,7 +95,7 @@ const Navbar = () => {
             Login
           </Link>
           <Link
-            className="hidden md:block border-1 border-[#2f2f2f] rounded-full px-3 py-1"
+            className="block border-1 border-[#2f2f2f] rounded-full px-3 py-1"
             href="#"
           >
             Contact Sales

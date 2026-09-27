@@ -3,10 +3,10 @@ import React from "react";
 
 const Cta = () => {
   return (
-    <div className="mx-auto w-full md:max-w-[1440px] inner-container">
+    <div className="mx-auto w-full md:max-w-[1440px] inner-container px-7 md:px-0">
       <section className="relative h-[500px] w-full bg-[url('/hero-poster.avif')] bg-cover bg-center bg-no-repeat flex items-center justify-center rounded-2xl">
         <div>
-          <h1 className="md:text-5xl text-foreground text-center">
+          <h1 className="text-3xl md:text-5xl text-foreground text-center">
             Deploy your frontend easily
           </h1>
           <p className="text-center text-balance max-w-4xl mx-auto w-full py-2">

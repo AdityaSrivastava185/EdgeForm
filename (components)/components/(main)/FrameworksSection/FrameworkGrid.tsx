@@ -6,34 +6,34 @@ const FrameworkGrid = () => {
       <div className="relative">
 
         {/* Top-left */}
-        <div className="absolute -left-[7px] -top-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:absolute -left-[7px] -top-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Top - vertical divider */}
-        <div className="absolute left-[66.6667%] -top-[7px] z-20 h-3.5 w-3.5 -translate-x-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:absolute left-[66.6667%] -top-[7px] z-20 h-3.5 w-3.5 -translate-x-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Top-right */}
-        <div className="absolute -right-[7px] -top-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:absolute -right-[7px] -top-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Middle - vertical divider + first horizontal divider */}
-        <div className="absolute left-[66.6667%] top-1/3 z-20 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:absolute left-[66.6667%] top-1/3 z-20 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Middle-right - first horizontal divider */}
-        <div className="absolute -right-[7px] top-1/3 z-20 h-3.5 w-3.5 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:absolute -right-[7px] top-1/3 z-20 h-3.5 w-3.5 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Middle - vertical divider + second horizontal divider */}
-        <div className="absolute left-[66.6667%] top-2/3 z-20 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:absolute left-[66.6667%] top-2/3 z-20 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Middle-right - second horizontal divider */}
-        <div className="absolute -right-[7px] top-2/3 z-20 h-3.5 w-3.5 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:absolute -right-[7px] top-2/3 z-20 h-3.5 w-3.5 -translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Bottom-left */}
-        <div className="absolute -bottom-[7px] -left-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:absolute -bottom-[7px] -left-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Bottom - vertical divider */}
-        <div className="absolute bottom-[0px] left-[66.6667%] z-20 h-3.5 w-3.5 -translate-x-1/2 translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:absolute bottom-[0px] left-[66.6667%] z-20 h-3.5 w-3.5 -translate-x-1/2 translate-y-1/2 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* Bottom-right */}
-        <div className="absolute -bottom-[7px] -right-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
+        <div className="hidden md:absolute -bottom-[7px] -right-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de10] bg-background" />
 
         {/* ================= MAIN GRID ================= */}
 
@@ -41,7 +41,7 @@ const FrameworkGrid = () => {
           
           {/* LEFT PANEL */}
           <div className="relative flex items-center justify-center border-b border-[#f0e3de10] lg:border-b-0 lg:border-r">
-            <div className="w-full max-w-[500px] px-4">
+            <div className="w-full max-w-[500px] p-7 md:px-4 md:p-0">
               {/* Command box */}
               <div className="rounded-md border border-dashed border-[#f0e3de15] p-1">
                 <div className="overflow-hidden rounded-[5px] border border-[#f0e3de12] bg-[#151515]">
@@ -79,7 +79,7 @@ const FrameworkGrid = () => {
             <button
               type="button"
               aria-label="Copy command"
-              className="absolute bottom-3 right-3 flex h-7 w-7 cursor-pointer items-center justify-center rounded-md border border-dashed border-[#f0e3de15] text-[#f0e3de60] transition-colors hover:border-[#ff5e1f] hover:text-[#ff5e1f]"
+              className="hidden absolute bottom-3 right-3 md:flex h-7 w-7 cursor-pointer items-center justify-center rounded-md border border-dashed border-[#f0e3de15] text-[#f0e3de60] transition-colors hover:border-[#ff5e1f] hover:text-[#ff5e1f]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

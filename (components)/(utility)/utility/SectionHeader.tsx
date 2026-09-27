@@ -22,11 +22,11 @@ const SectionHeader = ({
     <section>
       <div className={cn("flex flex-col gap-4", className)}>
         <h3
-          className={cn("text-center text-balance md:text-5xl", titleClassName)}
+          className={cn("text-center md:text-balance text-2xl md:text-5xl px-7 md:px-0", titleClassName)}
         >
           {title}
         </h3>
-        <p className={cn("text-center text-balance", descriptionClassName)}>
+        <p className={cn("text-center md:text-balance px-7 md:px-0", descriptionClassName)}>
           {description}
         </p>
       </div>

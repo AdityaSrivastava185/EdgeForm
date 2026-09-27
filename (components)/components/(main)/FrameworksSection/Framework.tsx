@@ -19,7 +19,7 @@ const Framework = () => {
             <VerticalBorder />
           </div>
         </div>
-        <div className="inner-container">
+        <div className="md:inner-container">
             <FrameworkHeader/>
             <FrameworkGrid/>
         </div>

@@ -17,7 +17,7 @@ const AllProducts = () => {
             <VerticalBorder />
           </div>
         </div>
-        <div className="inner-container">
+        <div className="md:inner-container">
            <AllProductsHeader/>
            <AllProductsGridCards/>
         </div>
