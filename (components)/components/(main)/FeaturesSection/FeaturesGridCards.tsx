@@ -101,7 +101,7 @@ const FeaturesGridCards = () => {
                 <Link
                   className="
                     w-full rounded-full border border-[#f0e3de20]
-                    px-5 py-3 text-center text-sm
+                    px-5 py-3 text-center
                     transition-all duration-300 ease-in-out
                     hover:border-dashed
                     hover:border-[#ff5e1f]
@@ -117,7 +117,7 @@ const FeaturesGridCards = () => {
                 <Link
                   className="
                     w-full rounded-full border border-[#f0e3de20]
-                    px-5 py-3 text-center text-sm
+                    px-5 py-3 text-center
                     transition-all duration-300 ease-in-out
                     hover:border-dashed
                     hover:border-[#ff5e1f]

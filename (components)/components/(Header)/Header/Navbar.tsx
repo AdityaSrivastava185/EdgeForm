@@ -46,7 +46,9 @@ const Navbar = () => {
               -translate-y-1/2
               rounded-lg
               border
-              border-[#2f2f2f]
+              border-dashed
+              border-[#ff5e1f]
+              bg-[#ff5e1f]/5
               transition-all
               duration-300
               ease-out
