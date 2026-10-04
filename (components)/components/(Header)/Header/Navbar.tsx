@@ -12,19 +12,23 @@ const Navbar = () => {
     width: 0,
   });
 
-  const navRef = useRef(null);
+ const navRef = useRef<HTMLDivElement | null>(null);
 
-  const handleMouseEnter = (e: any, item: any) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const navRect = navRef.current.getBoundingClientRect();
+ const handleMouseEnter = (e: any, item: any) => {
+  const rect = e.currentTarget.getBoundingClientRect();
+  const nav = navRef.current;
 
-    setPosition({
-      left: rect.left - navRect.left,
-      width: rect.width,
-    });
+  if (!nav) return;
 
-    setActiveItem(item);
-  };
+  const navRect = nav.getBoundingClientRect();
+
+  setPosition({
+    left: rect.left - navRect.left,
+    width: rect.width,
+  });
+
+  setActiveItem(item);
+};
 
   return (
     <div className="container py-4">
@@ -62,7 +66,7 @@ const Navbar = () => {
           <div className="flex flex-row items-center gap-2">
             {navItems.map((item) => (
               <Link
-              key={item}
+                key={item}
                 href="#"
                 className="flex flex-row items-center justify-center gap-2 relative z-10 px-3 py-2"
                 onMouseEnter={(e) => handleMouseEnter(e, item)}
@@ -84,9 +88,8 @@ const Navbar = () => {
                   <path d="m7 9 5-5 5 5" />
                 </svg>
               </Link>
-          ))}
+            ))}
           </div>
-          
         </div>
 
         <div className="flex items-center gap-1">
