@@ -25,11 +25,11 @@ const Hero = () => {
         <div className="flex flex-col items-center gap-10 inner-container">
           <div className="relative flex items-center justify-center h-36 w-72">
             <Pattern />
-            <div className="flex items-center justify-center gap-2 border-1 border-[#ff5e1f] border-dashed rounded-md p-2 bg-[#ff5e1f]/5">
+            <div className="flex items-center justify-center gap-2 border-1 border-accent border-dashed rounded-md p-2 bg-accent/5">
               <span>
                 <FrontendBadge />
               </span>
-              <p className="text-[#ff5e1f]">FRONTEND</p>
+              <p className="text-accent">FRONTEND</p>
             </div>
           </div>
           <SectionHeader
@@ -49,12 +49,12 @@ const Hero = () => {
               daily. Build with the same primitives we use in production"
           />
 
-          <div className="bg-[#f0e3de20]/30 relative w-full md:p-1 rounded-md">
+          <div className="bg-background-tertiory/30 relative w-full md:p-1 rounded-md">
             <HeroImage />
             <div className="flex justify-end p-1">
-              <span className="text-[#f0e3de]/70 text-sm md:text-base">Image source -</span>
+              <span className="text-accent-light/70 text-sm md:text-base">Image source -</span>
               <Link
-                className="text-[#ff5e1f] text-sm md:text-base"
+                className="text-accent text-sm md:text-base"
                 href="https://www.cloudflare.com/solutions/frontends/"
               >
                 Cloudflare

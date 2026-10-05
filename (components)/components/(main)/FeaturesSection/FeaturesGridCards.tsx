@@ -66,8 +66,8 @@ const featuresList = [
 const FeaturesGridCards = () => {
   return (
     <div className="mx-auto w-full px-3 sm:px-4 md:max-w-5xl md:px-0">
-      <div className="rounded-md border border-dashed border-[#f0e3de]/10 p-1 sm:p-2">
-        <div className="overflow-hidden rounded-md border border-[#262626]">
+      <div className="rounded-md border border-dashed border-surface p-1 sm:p-2">
+        <div className="overflow-hidden rounded-md border border-surface">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {featuresList.map((feature) => (
               <SectionHeader
@@ -76,7 +76,7 @@ const FeaturesGridCards = () => {
                 description={feature.description}
                 className="
                   relative flex h-full flex-col gap-0
-                  border-b border-[#262626]
+                  border-b border-surface
                   px-4 py-5
                   sm:px-5 sm:py-5
                   md:border-r md:px-5 md:py-4
@@ -91,7 +91,7 @@ const FeaturesGridCards = () => {
                   mt-2
                   text-start text-balance
                   leading-relaxed
-                  text-[#f0e3de]/70
+                  text-accent-light/70
                 "
               />
             ))}
@@ -100,13 +100,13 @@ const FeaturesGridCards = () => {
               <div className="flex w-full flex-col items-center justify-center gap-3 sm:flex-row sm:gap-5 md:gap-7">
                 <Link
                   className="
-                    w-full rounded-full border border-[#f0e3de20]
+                    w-full rounded-full border border-background-tertiory
                     px-5 py-3 text-center
                     transition-all duration-300 ease-in-out
                     hover:border-dashed
-                    hover:border-[#ff5e1f]
-                    hover:bg-[#ff5e1f]/5
-                    hover:text-[#ff5e1f]
+                    hover:border-accent
+                    hover:bg-accent/5
+                    hover:text-accent
                     sm:w-auto
                   "
                   href=""
@@ -116,13 +116,13 @@ const FeaturesGridCards = () => {
 
                 <Link
                   className="
-                    w-full rounded-full border border-[#f0e3de20]
+                    w-full rounded-full border border-background-tertiory
                     px-5 py-3 text-center
                     transition-all duration-300 ease-in-out
                     hover:border-dashed
-                    hover:border-[#ff5e1f]
-                    hover:bg-[#ff5e1f]/5
-                    hover:text-[#ff5e1f]
+                    hover:border-accent
+                    hover:bg-accent/5
+                    hover:text-accent
                     sm:w-auto
                   "
                   href=""

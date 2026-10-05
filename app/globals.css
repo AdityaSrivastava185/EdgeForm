@@ -1,23 +1,71 @@
 @import "tailwindcss";
 
- :root {
-    --background: #161414;
-    --foreground: #ededed;
-  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  /* Background Colors */
+  --background: #161414;
+  --background-secondary: #151515;
+  --background-dark: #0a0a0a;
+  --background-tertiory: #f0e3de20;
+
+  /* Foreground/Text Colors */
+  --foreground: #ededed;
+  --foreground-secondary: #e5e5e5;
+  --foreground-muted: #a1a1a1;
+  --foreground-subtle: #737373;
+  
+  /* Accent Colors */
+  --accent: #ff5e1f;          
+  --accent-light: #f0e3de;     
+  --accent-dark: #ac6735;    
+  
+  /* Border Colors */
+  --border: #2f2f2f;
+  --border-light: #525252;
+  --border-dark: #171717;
+  
+  /* Surface Colors */
+  --surface: #262626;
+  --surface-light: #3c3c3c;
+  
+  /* Status Colors */
+  --success: #00c758;
+  --error: #e40014;
+  --warning: #fe6e00;
+  --info: #3080ff;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #161414;
-    --foreground: #ededed;
-  }
-} */
+
+@theme inline {
+  /* Color Palette */
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-background-tertiory: var(--background-tertiory);
+  --color-foreground: var(--foreground);
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+  --color-surface: var(--surface);
+  
+  /* Accent Light Opacity Scale for consistent usage */
+  --color-accent-light-10: rgba(240, 227, 222, 0.10);
+  --color-accent-light-12: rgba(240, 227, 222, 0.12);
+  --color-accent-light-15: rgba(240, 227, 222, 0.15);
+  --color-accent-light-20: rgba(240, 227, 222, 0.20);
+  --color-accent-light-30: rgba(240, 227, 222, 0.30);
+  --color-accent-light-60: rgba(240, 227, 222, 0.60);
+  --color-accent-light-70: rgba(240, 227, 222, 0.70);
+  --color-accent-light-80: rgba(240, 227, 222, 0.80);
+  
+  /* Accent Opacity Scale */
+  --color-accent-5: rgba(255, 94, 31, 0.05);
+  --color-accent-10: rgba(255, 94, 31, 0.10);
+  --color-accent-20: rgba(255, 94, 31, 0.20);
+  --color-accent-30: rgba(255, 94, 31, 0.30);
+}
+
 
 body {
   background: var(--background);
@@ -26,10 +74,10 @@ body {
   font-weight: 500;
 }
 
-.container{
-  @apply  md:max-w-[1440px] w-full mx-auto;
+.container {
+  @apply md:max-w-[1440px] w-full mx-auto;
 }
 
 .inner-container {
-  @apply py-7
+  @apply py-7;
 }

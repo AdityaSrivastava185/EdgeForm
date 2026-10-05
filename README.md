@@ -4,7 +4,7 @@ Credit -  [Cloudflare](https://www.cloudflare.com/solutions/frontends/)
 
 # Edgeform Landing Page
 
-A modern, responsive design engineering study for Edgeform - a frontend infrastructure platform built with Next.js 16, TypeScript, and Tailwind CSS v4.
+A modern, responsive design engineering study for Edgeform - a frontend infrastructure platform built with Next.js 16, TypeScript, and Tailwind CSS v4, built from scratch as a design engineering study.
 
 ## Overview
 

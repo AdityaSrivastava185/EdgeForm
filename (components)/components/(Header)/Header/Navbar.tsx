@@ -51,8 +51,8 @@ const Navbar = () => {
               rounded-lg
               border
               border-dashed
-              border-[#ff5e1f]
-              bg-[#ff5e1f]/5
+              border-accent
+              bg-accent/5
               transition-all
               duration-300
               ease-out
@@ -94,7 +94,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-1">
           <Link
-            className="border-1 bg-[#ff5e1f] md:bg-transparent border-[#2f2f2f] rounded-full px-3 py-1 "
+            className="border-1 bg-accent md:bg-transparent border-[#2f2f2f] rounded-full px-3 py-1 "
             href="#"
           >
             Login

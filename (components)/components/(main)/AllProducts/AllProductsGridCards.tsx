@@ -180,37 +180,37 @@ const AllProductsGridCards = () => {
     <div className="md:my-20 w-full">
       <div className="relative">
     
-        <div className="hidden md:block absolute -left-[7px] -top-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de15] bg-background" />
+        <div className="hidden md:block absolute -left-[7px] -top-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-background-tertiory bg-background" />
 
    
-        <div className="hidden md:block absolute left-1/3 -top-[7px] z-20 h-3.5 w-3.5 -translate-x-1/2 rounded-sm border border-[#f0e3de15] bg-background" />
+        <div className="hidden md:block absolute left-1/3 -top-[7px] z-20 h-3.5 w-3.5 -translate-x-1/2 rounded-sm border border-background-tertiory bg-background" />
 
       
-        <div className="hidden md:block absolute left-2/3 -top-[7px] z-20 h-3.5 w-3.5 -translate-x-1/2 rounded-sm border border-[#f0e3de15] bg-background" />
+        <div className="hidden md:block absolute left-2/3 -top-[7px] z-20 h-3.5 w-3.5 -translate-x-1/2 rounded-sm border border-background-tertiory bg-background" />
 
       
-        <div className="hidden md:block absolute -right-[7px] -top-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de15] bg-background" />
+        <div className="hidden md:block absolute -right-[7px] -top-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-background-tertiory bg-background" />
 
-        <div className="hidden md:block absolute -left-[7px] top-[57%] z-20 h-3.5 w-3.5 -translate-y-1/2 rounded-sm border border-[#f0e3de15] bg-background" />
+        <div className="hidden md:block absolute -left-[7px] top-[57%] z-20 h-3.5 w-3.5 -translate-y-1/2 rounded-sm border border-background-tertiory bg-background" />
 
        
-        <div className="hidden md:block absolute left-1/3 top-[57%] z-20 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-sm border border-[#f0e3de15] bg-background" />
+        <div className="hidden md:block absolute left-1/3 top-[57%] z-20 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-sm border border-background-tertiory bg-background" />
 
       
-        <div className="hidden md:block absolute left-2/3 top-[57%] z-20 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-sm border border-[#f0e3de15] bg-background" />
+        <div className="hidden md:block absolute left-2/3 top-[57%] z-20 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-sm border border-background-tertiory bg-background" />
 
         
-        <div className="hidden md:block absolute -right-[7px] top-[57%] z-20 h-3.5 w-3.5 -translate-y-1/2 rounded-sm border border-[#f0e3de15] bg-background" />
+        <div className="hidden md:block absolute -right-[7px] top-[57%] z-20 h-3.5 w-3.5 -translate-y-1/2 rounded-sm border border-background-tertiory bg-background" />
 
        
-        <div className="hidden md:block absolute -bottom-[7px] -left-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de15] bg-background" />
+        <div className="hidden md:block absolute -bottom-[7px] -left-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-background-tertiory bg-background" />
 
   
-        <div className="hidden md:block absolute bottom-[-7px] left-1/3 z-20 h-3.5 w-3.5 -translate-x-1/2 rounded-sm border border-[#f0e3de15] bg-background" />
+        <div className="hidden md:block absolute bottom-[-7px] left-1/3 z-20 h-3.5 w-3.5 -translate-x-1/2 rounded-sm border border-background-tertiory bg-background" />
 
-        <div className="hidden md:block absolute bottom-[-7px] left-2/3 z-20 h-3.5 w-3.5 -translate-x-1/2 rounded-sm border border-[#f0e3de15] bg-background" />
+        <div className="hidden md:block absolute bottom-[-7px] left-2/3 z-20 h-3.5 w-3.5 -translate-x-1/2 rounded-sm border border-background-tertiory bg-background" />
 
-        <div className="hidden md:block absolute -bottom-[7px] -right-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-[#f0e3de15] bg-background" />
+        <div className="hidden md:block absolute -bottom-[7px] -right-[7px] z-20 h-3.5 w-3.5 rounded-sm border border-background-tertiory bg-background" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {productCategories.map((category) => (
