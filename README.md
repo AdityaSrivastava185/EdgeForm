@@ -309,5 +309,14 @@ Example:
 - CSS is minimal with Tailwind's utility-first approach
 - Fonts are loaded with `next/font/google` for optimal performance
 
+## Inspiration & Credits
+
+**Special Mention & Inspiration**
+This project was inspired by and takes design cues from [Cloudflare](https://www.cloudflare.com/solutions/frontends/). The layout, color scheme, and overall design philosophy are influenced by Mistral AI's official website.
+
+**Image Sources**
+All images used in this project are sourced from [Cloudflare](https://www.cloudflare.com/solutions/frontends/). We acknowledge and appreciate their contribution to the AI community and their open approach to sharing resources.
+
+
 Inspiration and Credit - [Cloudflare](https://www.cloudflare.com/solutions/frontends/)
 
