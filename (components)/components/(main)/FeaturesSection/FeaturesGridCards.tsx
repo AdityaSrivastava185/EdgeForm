@@ -85,6 +85,7 @@ const FeaturesGridCards = () => {
                   text-start md:text-balance
                   sm:text-xl
                   text-lg
+                  md:text-lg
                 "
                 descriptionClassName="
                   mt-2

@@ -62,7 +62,7 @@ const FrameworkGrid = () => {
                   </div>
 
                   {/* Command */}
-                  <div className="flex h-[40px] items-center px-2 font-mono whitespace-nowrap overflow-x-scroll">
+                  <div className="flex h-[40px] items-center px-2 font-mono whitespace-nowrap overflow-x-scroll md:overflow-hidden">
                     <span className="mr-2 select-none text-accent-light/70">
                       $
                     </span>

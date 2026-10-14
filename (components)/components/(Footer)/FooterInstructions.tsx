@@ -4,10 +4,10 @@ import React from "react";
 const FooterInstructions = () => {
   return (
     <div className="mx-7">
-      <div className="container border-x border-dashed border-background-tertiory md:px-5">
+      <div className="container border-x border-dashed border-background-tertiory px-5">
         <div className="inner-container">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <span>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+            <span className="pb-2 md:pb-0">
               Source and Inspiration from{" "}
               <Link
                 href={"https://www.cloudflare.com/solutions/frontends/"}
@@ -16,7 +16,7 @@ const FooterInstructions = () => {
                 Cloudflare
               </Link>
             </span>
-            <div className="flex items-center gap-2 ">
+            <div className="flex flex-col md:flex-row items-start gap-2 text-accent-light-70">
               <div>
                 <p>Edgeform</p>
               </div>
