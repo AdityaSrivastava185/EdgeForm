@@ -41,13 +41,13 @@ const FrameworkGrid = () => {
           
           {/* LEFT PANEL */}
           <div className="relative flex items-center justify-center border-b border-background-tertiory lg:border-b-0 lg:border-r">
-            <div className="w-full max-w-[500px] p-7 md:px-4 md:p-0">
+            <div className="w-full max-w-[500px] p-3 md:px-4 md:p-0">
               {/* Command box */}
               <div className="rounded-md border border-dashed border-background-tertiory p-1">
                 <div className="overflow-hidden rounded-[5px] border border-background-tertiory bg-[#151515]">
                   
                   {/* Package manager tabs */}
-                  <div className="flex h-12 items-center gap-1 border-b border-background-tertiory px-2">
+                  <div className="flex h-12 items-center gap-1 border-b border-background-tertiory px-2 ">
                     <button className="rounded-[4px] border border-background-tertiory px-2 py-1 font-mono text-accent-light">
                       npm
                     </button>
@@ -62,11 +62,10 @@ const FrameworkGrid = () => {
                   </div>
 
                   {/* Command */}
-                  <div className="flex h-[40px] items-center px-2 font-mono">
+                  <div className="flex h-[40px] items-center px-2 font-mono whitespace-nowrap overflow-x-scroll">
                     <span className="mr-2 select-none text-accent-light/70">
                       $
                     </span>
-
                     <span className="text-accent">
                       npm create edgeform my-app
                     </span>
@@ -100,11 +99,11 @@ const FrameworkGrid = () => {
 
             {/* Feature 1 */}
             <div className="flex flex-col justify-start border-b border-background-tertiory px-6 py-6">
-              <h3 className="mb-1 font-medium text-accent-light">
+              <h3 className="mb-1 font-medium text-accent-light text-xl">
                 Framework-agnostic
               </h3>
 
-              <p className="text-accent-light/70">
+              <p className="text-accent-light/70 text-md">
                 Support for Next.js, React, Vue, Svelte, Astro, and more — with
                 automatic detection and configurations
               </p>
@@ -112,11 +111,11 @@ const FrameworkGrid = () => {
 
             {/* Feature 2 */}
             <div className="flex flex-col justify-start border-b border-background-tertiory px-6 py-6">
-              <h3 className="mb-1 font-medium text-accent-light">
+              <h3 className="mb-1 font-medium text-accent-light text-xl">
                 Full-stack ready
               </h3>
 
-              <p className="text-accent-light/70">
+              <p className="text-accent-light/70 text-md">
                 Deploy both frontend and backend together — from API routes to
                 serverless functions, all in one seamless deployment.
               </p>
@@ -124,11 +123,11 @@ const FrameworkGrid = () => {
 
             {/* Feature 3 */}
             <div className="flex flex-col justify-start px-6 py-6">
-              <h3 className="mb-1 font-medium text-accent-light">
+              <h3 className="mb-1 font-medium text-accent-light text-xl">
                 Edge-optimized
               </h3>
 
-              <p className="text-accent-light/70">
+              <p className="text-accent-light/70 text-md">
                 Your code runs at the edge in 330+ cities worldwide — with KV
                 storage, D1 databases, and R2 object storage available globally.
               </p>

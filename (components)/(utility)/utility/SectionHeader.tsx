@@ -26,7 +26,7 @@ const SectionHeader = ({
         >
           {title}
         </h3>
-        <p className={cn("text-center text-md md:text-balance px-2 md:px-0", descriptionClassName)}>
+        <p className={cn("text-center text-md md:text-base md:text-balance px-2 md:px-0", descriptionClassName)}>
           {description}
         </p>
       </div>

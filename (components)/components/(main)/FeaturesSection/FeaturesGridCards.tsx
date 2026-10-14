@@ -77,19 +77,18 @@ const FeaturesGridCards = () => {
                 className="
                   relative flex h-full flex-col gap-0
                   border-b border-surface
-                  px-4 py-5
+                  px-2 py-5
                   sm:px-5 sm:py-5
                   md:border-r md:px-5 md:py-4
                 "
                 titleClassName="
-                  text-start text-balance
-                  text-lg
+                  text-start md:text-balance
                   sm:text-xl
-                  md:text-lg
+                  text-lg
                 "
                 descriptionClassName="
                   mt-2
-                  text-start text-balance
+                  text-start md:text-balance text-md
                   leading-relaxed
                   text-accent-light/70
                 "
@@ -108,6 +107,7 @@ const FeaturesGridCards = () => {
                     hover:bg-accent/5
                     hover:text-accent
                     sm:w-auto
+                    whitespace-nowrap
                   "
                   href=""
                 >

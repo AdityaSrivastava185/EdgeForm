@@ -13,18 +13,18 @@ const GridCards = () => {
             <div className="absolute bg-[#161414] -right-[7px] -bottom-[7px] w-3.5 h-3.5 border border-background-tertiory rounded-sm"></div>
           </div>
           <SectionHeader
-            className="flex flex-1 gap-0 flex-col items-start p-6 lg:p-8"
-            titleClassName="text-start md:text-lg md:text-balance text-xl md:text-base"
-            descriptionClassName="text-accent-light/70 md:text-balance text-start"
+            className="flex flex-1 gap-0 flex-col items-start p-3 lg:p-8"
+            titleClassName="text-start text-lg md:text-balance"
+            descriptionClassName="text-accent-light/70 md:text-balance text-start text-md"
             title="Preview deployments for every branch"
             description="Create a pull request, get a preview URL to view and share before deploying to productions"
           />
         </div>
         <SectionHeader
-          className="border-surface relative flex h-full flex-col border col-span-1 items-start p-6 lg:p-8 gap-0"
+          className="border-surface relative flex h-full flex-col border col-span-1 items-start p-3 lg:p-8 gap-0"
           title="Support for all frameworks and rendering mode"
-          titleClassName="md:text-lg md:text-balance text-start text-xl md:text-base"
-          descriptionClassName="text-accent-light/70 text-balance text-start"
+          titleClassName="text-start text-lg md:text-balance"
+          descriptionClassName="text-accent-light/70 text-balance text-start text-md"
           description="Server-side rendered (SSR), Incremental Static Regeneration (ISR),
               Static Site Generation (SSG), client-side rendered."
         />
@@ -36,10 +36,10 @@ const GridCards = () => {
             <div className="absolute bg-[#161414] -right-[7px] -bottom-[7px] w-3.5 h-3.5 border border-background-tertiory rounded-sm"></div>
           </div>
           <SectionHeader
-            className="flex flex-1 gap-0 flex-col items-start p-6 lg:p-8"
+            className="flex flex-1 gap-0 flex-col items-start p-3 lg:p-8"
             title="HTML, JS and CSS caching"
-            titleClassName="md:text-lg md:text-balance text-start text-xl md:text-base"
-            descriptionClassName="text-accent-light/70 text-balance text-start"
+            titleClassName="text-start text-lg md:text-balance"
+            descriptionClassName="text-md md:text-base text-accent-light/70 text-balance text-start"
             description="Every request for a static asset goes through Edgeform's Tiered
               Cache for the fastest possible performance."
           />

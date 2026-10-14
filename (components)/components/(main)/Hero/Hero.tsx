@@ -39,14 +39,20 @@ const Hero = () => {
               to your git repository, and deploy your project to a single Worker
               that serves both front-end and back-end and reaches users in less
               than 50 ms worldwide."
+              titleClassName="text-2xl"
+              descriptionClassName="text-md"
           />
 
+
           <GridCards />
+
           <SectionHeader
             title="Proven frontend infrastructure, powering products at scale"
             description="The same end-to-end frontend stack behind Edgeform's own products
               — battle-tested across billions of requests and millions of users
               daily. Build with the same primitives we use in production"
+              titleClassName="text-2xl"
+              descriptionClassName="text-md"
           />
 
           <div className="bg-background-tertiory/30 relative w-full md:p-1 rounded-md">
