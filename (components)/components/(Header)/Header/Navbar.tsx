@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div className="container py-4">
-      <div className="flex items-center justify-between px-10 md:px-0">
+      <div className="flex items-center justify-between px-5 md:px-0">
         <div>
           <h1>Edgeform</h1>
         </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
             Login
           </Link>
           <Link
-            className="block border-1 border-[#2f2f2f] rounded-full px-3 py-1"
+            className=" hidden md:block border-1 border-[#2f2f2f] rounded-full px-3 py-1"
             href="#"
           >
             Contact Sales
